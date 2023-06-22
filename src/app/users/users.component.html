@@ -1,0 +1,12 @@
+<div class="parent-container">
+    <div *ngFor="let hero of data" class="hero-container" (click)="selectHero(hero)">
+      <h2>Child Component</h2>
+      <div>
+        <h3>Name: {{ hero.name }}</h3>
+        <h3>Age: {{ hero.age }}</h3>
+        <h3>Email: {{ hero.email }}</h3>
+        <h3>City: {{ hero.city }}</h3>
+      </div>
+    </div>
+  </div>
+  
